@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+/* Enunciado:
+Como objetivo final debemos desarrollar un frontal que tenga la siguiente funcionalidad:
+
+- Deberá mostrar todos los productos al entrar a la aplicación
+- Formulario de filtrado (color, precio y marca)
+- Debemos poder ordenar por precio de manera ascendiente y descendiente
+- Componente para paginación que nos permita navegar entre los productos, debe mostrar en la página en la que estás, el total de productos y páginas
+- Al seleccionar un producto, mostraremos los datos relativos a este y su fabricante
+*/
+
+import "./App.css";
+import Header from "./components/header/Header";
+import Container from "./components/container/Container";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Concesionario de Motos" description="Confia en Motos Jesuslin.... ¡tu mejor moto!" />
+      <Container title="Elige tu moto"></Container>
+      <Footer />
     </div>
   );
 }
